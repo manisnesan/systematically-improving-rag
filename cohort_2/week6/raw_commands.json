@@ -1,0 +1,770 @@
+[
+  {
+    "name": "create-issue",
+    "title": "Create Issue",
+    "subtitle": "Jira",
+    "description": "Create and assign new issues.",
+    "mode": "view",
+    "source_name": "create-issue",
+    "source_description": "Create and assign new issues.",
+    "extension_name": "jira"
+  },
+  {
+    "name": "open-issues",
+    "title": "Open Issues",
+    "subtitle": "Jira",
+    "description": "View and modify open issues that are assigned to you.",
+    "mode": "view",
+    "source_name": "open-issues",
+    "source_description": "View and modify open issues that are assigned to you.",
+    "extension_name": "jira"
+  },
+  {
+    "name": "reported-issues",
+    "title": "Reported Issues",
+    "subtitle": "Jira",
+    "description": "View and modify issues that were reported by you.",
+    "mode": "view",
+    "source_name": "reported-issues",
+    "source_description": "View and modify issues that were reported by you.",
+    "extension_name": "jira"
+  },
+  {
+    "name": "watched-issues",
+    "title": "Watched Issues",
+    "subtitle": "Jira",
+    "description": "View and modify issues that you are watching.",
+    "mode": "view",
+    "source_name": "watched-issues",
+    "source_description": "View and modify issues that you are watching.",
+    "extension_name": "jira"
+  },
+  {
+    "name": "active-sprints",
+    "title": "Active Sprints",
+    "subtitle": "Jira",
+    "description": "View and modify issues of active sprints.",
+    "mode": "view",
+    "source_name": "active-sprints",
+    "source_description": "View and modify issues of active sprints.",
+    "extension_name": "jira"
+  },
+  {
+    "name": "my-filters",
+    "title": "My Filters",
+    "subtitle": "Jira",
+    "description": "View and modify issues of your saved filters.",
+    "mode": "view",
+    "source_name": "my-filters",
+    "source_description": "View and modify issues of your saved filters.",
+    "extension_name": "jira"
+  },
+  {
+    "name": "recently-updated-issues",
+    "title": "Recently Updated Issues",
+    "subtitle": "Jira",
+    "description": "View and modify issues that have recently been updated.",
+    "mode": "view",
+    "source_name": "recently-updated-issues",
+    "source_description": "View and modify issues that have recently been updated.",
+    "extension_name": "jira"
+  },
+  {
+    "name": "search-issues",
+    "title": "Search Issues",
+    "subtitle": "Jira",
+    "description": "Search issues globally in all projects.",
+    "mode": "view",
+    "source_name": "search-issues",
+    "source_description": "Search issues globally in all projects.",
+    "extension_name": "jira"
+  },
+  {
+    "name": "my-pull-requests",
+    "title": "My Pull Requests",
+    "description": "List pull requests you created, participated in, or were mentioned in.",
+    "mode": "view",
+    "source_name": "my-pull-requests",
+    "source_description": "List pull requests you created, participated in, or were mentioned in.",
+    "extension_name": "github"
+  },
+  {
+    "name": "search-pull-requests",
+    "title": "Search Pull Requests",
+    "description": "Search recent pull requests globally in all repositories.",
+    "mode": "view",
+    "source_name": "search-pull-requests",
+    "source_description": "Search recent pull requests globally in all repositories.",
+    "extension_name": "github"
+  },
+  {
+    "name": "create-pull-request",
+    "title": "Create Pull Request",
+    "description": "Create a pull request in one of your GitHub repositories.",
+    "mode": "view",
+    "source_name": "create-pull-request",
+    "source_description": "Create a pull request in one of your GitHub repositories.",
+    "extension_name": "github"
+  },
+  {
+    "name": "my-issues",
+    "title": "My Issues",
+    "description": "List issues created by you, assigned to you or mentioning you.",
+    "mode": "view",
+    "keywords": ["open issues", "created issues"],
+    "source_name": "my-issues",
+    "source_description": "List issues created by you, assigned to you or mentioning you.",
+    "extension_name": "github"
+  },
+  {
+    "name": "search-issues",
+    "title": "Search Issues",
+    "description": "Search recent issues globally in all repositories.",
+    "mode": "view",
+    "source_name": "search-issues",
+    "source_description": "Search recent issues globally in all repositories.",
+    "extension_name": "github"
+  },
+  {
+    "name": "create-issue",
+    "title": "Create Issue",
+    "description": "Create an issue in one of your GitHub repositories.",
+    "mode": "view",
+    "source_name": "create-issue",
+    "source_description": "Create an issue in one of your GitHub repositories.",
+    "extension_name": "github"
+  },
+  {
+    "name": "create-branch",
+    "title": "Create Branch",
+    "description": "Create a branch in one of your GitHub repositories",
+    "mode": "view",
+    "disabledByDefault": true,
+    "source_name": "create-branch",
+    "source_description": "Create a branch in one of your GitHub repositories",
+    "extension_name": "github"
+  },
+  {
+    "name": "search-repositories",
+    "title": "Search Repositories",
+    "description": "Search in your public or private repositories by name.",
+    "mode": "view",
+    "source_name": "search-repositories",
+    "source_description": "Search in your public or private repositories by name.",
+    "extension_name": "github"
+  },
+  {
+    "name": "my-latest-repositories",
+    "title": "My Latest Repositories",
+    "description": "List your repositories by latest updated",
+    "mode": "view",
+    "source_name": "my-latest-repositories",
+    "source_description": "List your repositories by latest updated",
+    "extension_name": "github"
+  },
+  {
+    "name": "workflow-runs",
+    "title": "Workflow Runs",
+    "description": "Manage workflow runs for a selected GitHub repository.",
+    "mode": "view",
+    "source_name": "workflow-runs",
+    "source_description": "Manage workflow runs for a selected GitHub repository.",
+    "extension_name": "github"
+  },
+  {
+    "name": "notifications",
+    "title": "Notifications",
+    "description": "List inbox notifications from all repositories or a selected repository.",
+    "mode": "view",
+    "source_name": "notifications",
+    "source_description": "List inbox notifications from all repositories or a selected repository.",
+    "extension_name": "github"
+  },
+  {
+    "name": "unread-notifications",
+    "title": "Unread Notifications",
+    "description": "Shows unread notifications in the macOS menu bar.",
+    "mode": "menu-bar",
+    "interval": "15m",
+    "source_name": "unread-notifications",
+    "source_description": "Shows unread notifications in the macOS menu bar.",
+    "extension_name": "github"
+  },
+  {
+    "name": "search-discussions",
+    "title": "Search Discussions",
+    "description": "Search recent Discussions globally in all repositories",
+    "mode": "view",
+    "disabledByDefault": true,
+    "source_name": "search-discussions",
+    "source_description": "Search recent Discussions globally in all repositories",
+    "extension_name": "github"
+  },
+  {
+    "name": "my-discussions",
+    "title": "My Discussions",
+    "description": "Show your Discussions",
+    "mode": "view",
+    "disabledByDefault": true,
+    "source_name": "my-discussions",
+    "source_description": "Show your Discussions",
+    "extension_name": "github"
+  },
+  {
+    "name": "my-projects",
+    "title": "My Projects",
+    "description": "Show your Projects",
+    "mode": "view",
+    "source_name": "my-projects",
+    "source_description": "Show your Projects",
+    "extension_name": "github"
+  },
+  {
+    "name": "my-issues-menu",
+    "title": "My Issues Menu Bar",
+    "description": "Display My Issues in the Menu Bar",
+    "mode": "menu-bar",
+    "keywords": ["open issues"],
+    "interval": "15m",
+    "source_name": "my-issues-menu",
+    "source_description": "Display My Issues in the Menu Bar",
+    "extension_name": "github"
+  },
+  {
+    "name": "my-pull-requests-menu",
+    "title": "My Pull Requests Menu Bar",
+    "description": "Display My Pull Requests in the Menu Bar",
+    "mode": "menu-bar",
+    "interval": "15m",
+    "source_name": "my-pull-requests-menu",
+    "source_description": "Display My Pull Requests in the Menu Bar",
+    "extension_name": "github"
+  },
+  {
+    "name": "search",
+    "title": "Search",
+    "subtitle": "Confluence",
+    "description": "Search for pages and blogs across Confluence.",
+    "mode": "view",
+    "source_name": "search",
+    "source_description": "Search for pages and blogs across Confluence.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "people",
+    "title": "People",
+    "subtitle": "Confluence",
+    "description": "Search for people in Confluence.",
+    "mode": "view",
+    "source_name": "people",
+    "source_description": "Search for people in Confluence.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "recent",
+    "title": "Recent",
+    "subtitle": "Confluence",
+    "description": "See your recently viewed pages.",
+    "mode": "view",
+    "source_name": "recent",
+    "source_description": "See your recently viewed pages.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "popular",
+    "title": "Popular",
+    "subtitle": "Confluence",
+    "description": "See what's popular in Confluence.",
+    "mode": "view",
+    "source_name": "popular",
+    "source_description": "See what's popular in Confluence.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "go",
+    "title": "Go",
+    "subtitle": "Confluence",
+    "description": "Quickly jump to useful places in Confluence.",
+    "mode": "view",
+    "source_name": "go",
+    "source_description": "Quickly jump to useful places in Confluence.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "switch-site",
+    "title": "Switch Site",
+    "subtitle": "Confluence",
+    "description": "Switch your active Confluence site.",
+    "mode": "view",
+    "source_name": "switch-site",
+    "source_description": "Switch your active Confluence site.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "new-page",
+    "title": "Create Page",
+    "subtitle": "Confluence",
+    "description": "Create a new page.",
+    "mode": "no-view",
+    "source_name": "new-page",
+    "source_description": "Create a new page.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "new-blog",
+    "title": "Create Blog",
+    "subtitle": "Confluence",
+    "description": "Create a new blog.",
+    "mode": "no-view",
+    "source_name": "new-blog",
+    "source_description": "Create a new blog.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "add-text",
+    "title": "Add Text",
+    "subtitle": "Confluence",
+    "description": "Add text to a page or blog",
+    "mode": "view",
+    "source_name": "add-text",
+    "source_description": "Add text to a page.",
+    "extension_name": "confluence-search"
+  },
+  {
+    "name": "create-database-page",
+    "title": "Create Database Page",
+    "subtitle": "Notion",
+    "description": "Create a page in a Notion database.",
+    "mode": "view",
+    "source_name": "create-database-page",
+    "source_description": "Create a page in a Notion database.",
+    "extension_name": "notion"
+  },
+  {
+    "name": "search-page",
+    "title": "Search Notion",
+    "description": "Search for Notion databases and pages.",
+    "mode": "view",
+    "source_name": "search-page",
+    "source_description": "Search for Notion databases and pages.",
+    "extension_name": "notion"
+  },
+  {
+    "name": "quick-capture",
+    "title": "Quick Capture",
+    "description": "Capture something and put it out in a Notion page.",
+    "mode": "view",
+    "source_name": "quick-capture",
+    "source_description": "Capture something and put it out in a Notion page.",
+    "extension_name": "notion"
+  },
+  {
+    "description": "Append or prepend text, along with date, to a Notion page.",
+    "mode": "view",
+    "name": "add-text-to-page",
+    "subtitle": "Notion",
+    "title": "Add Text to Page",
+    "arguments": [
+      {
+        "name": "text",
+        "type": "text",
+        "title": "Text",
+        "placeholder": "Text",
+        "required": false
+      }
+    ],
+    "source_name": "add-text-to-page",
+    "source_description": "Append or prepend text, along with date, to a Notion page.",
+    "extension_name": "notion"
+  },
+  {
+    "name": "searchNoteCommand",
+    "title": "Search Note",
+    "subtitle": "Obsidian",
+    "description": "Search, open, view, copy, paste and edit any note in Obsidian.",
+    "mode": "view",
+    "arguments": [
+      {
+        "name": "searchArgument",
+        "placeholder": "Note",
+        "type": "text",
+        "required": false
+      },
+      {
+        "name": "tagArgument",
+        "placeholder": "Tag",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "source_name": "searchNoteCommand",
+    "source_description": "Search, open, view, copy, paste and edit any note in Obsidian.",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "starredNotesCommand",
+    "title": "Bookmarked Notes",
+    "subtitle": "Obsidian",
+    "description": "Search, open, view, copy, paste and edit bookmarked notes in Obsidian.",
+    "mode": "view",
+    "arguments": [
+      {
+        "name": "searchArgument",
+        "placeholder": "Note",
+        "type": "text",
+        "required": false
+      },
+      {
+        "name": "tagArgument",
+        "placeholder": "Tag",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "source_name": "starredNotesCommand",
+    "source_description": "Search, open, view, copy, paste and edit bookmarked notes in Obsidian.",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "openVaultCommand",
+    "title": "Open Vault",
+    "subtitle": "Obsidian",
+    "description": "Open a vault in Obsidian.",
+    "mode": "view",
+    "source_name": "openVaultCommand",
+    "source_description": "Open a vault in Obsidian.",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "dailyNoteAppendCommand",
+    "title": "Append to Daily Note",
+    "subtitle": "Obsidian",
+    "description": "Append text to your daily note",
+    "mode": "view",
+    "arguments": [
+      {
+        "name": "text",
+        "placeholder": "Take out the trash",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "source_name": "dailyNoteAppendCommand",
+    "source_description": "Append text to your daily note",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "dailyNoteCommand",
+    "title": "Daily Note",
+    "subtitle": "Obsidian",
+    "description": "Open daily note in Obsidian. Will create new daily note when it doesn't exist yet.",
+    "mode": "view",
+    "source_name": "dailyNoteCommand",
+    "source_description": "Open daily note in Obsidian. Will create new daily note when it doesn't exist yet.",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "createNoteCommand",
+    "title": "Create Note",
+    "subtitle": "Obsidian",
+    "description": "Create new note",
+    "mode": "view",
+    "source_name": "createNoteCommand",
+    "source_description": "Create new note",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "randomNoteCommand",
+    "title": "Random Note",
+    "subtitle": "Obsidian",
+    "description": "Open random note",
+    "mode": "view",
+    "source_name": "randomNoteCommand",
+    "source_description": "Open random note",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "searchMedia",
+    "title": "Search Media",
+    "subtitle": "Obsidian",
+    "description": "Search for media in your vault",
+    "mode": "view",
+    "arguments": [
+      {
+        "name": "searchArgument",
+        "placeholder": "Name",
+        "type": "text",
+        "required": false
+      },
+      {
+        "name": "typeArgument",
+        "placeholder": "Type",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "source_name": "searchMedia",
+    "source_description": "Search for media in your vault",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "obsidianMenuBar",
+    "title": "Obsidian Menu Bar",
+    "subtitle": "Obsidian",
+    "description": "See your pinned notes at a glance and control actions from the menu bar.",
+    "mode": "menu-bar",
+    "source_name": "obsidianMenuBar",
+    "source_description": "See your pinned notes at a glance and control actions from the menu bar.",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "appendTaskCommand",
+    "title": "Append Task",
+    "subtitle": "Obsidian",
+    "description": "Append a task to a note of your choice",
+    "mode": "view",
+    "arguments": [
+      {
+        "name": "text",
+        "placeholder": "Your task",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "dueDate",
+        "placeholder": "YYYY-MM-DD",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "source_name": "appendTaskCommand",
+    "source_description": "Append a task to a note of your choice",
+    "extension_name": "obsidian"
+  },
+  {
+    "name": "index",
+    "title": "Search Notes",
+    "subtitle": "Apple Notes",
+    "description": "Search through your Apple notes.",
+    "mode": "view",
+    "source_name": "index",
+    "source_description": "Search through your Apple notes.",
+    "extension_name": "apple-notes"
+  },
+  {
+    "name": "new",
+    "title": "New Note",
+    "subtitle": "Apple Notes",
+    "description": "Create a new note in your Apple Notes.",
+    "mode": "no-view",
+    "keywords": ["write note", "add note", "make note", "create note"],
+    "arguments": [
+      {
+        "name": "text",
+        "type": "text",
+        "placeholder": "Text"
+      }
+    ],
+    "source_name": "new",
+    "source_description": "Create a new note in your Apple Notes.",
+    "extension_name": "apple-notes"
+  },
+  {
+    "name": "menu-bar",
+    "title": "Menu Bar Notes",
+    "subtitle": "Apple Notes",
+    "description": "View your recent and pinned Apple notes in the menu bar.",
+    "interval": "5m",
+    "mode": "menu-bar",
+    "source_name": "menu-bar",
+    "source_description": "View your recent and pinned Apple notes in the menu bar.",
+    "extension_name": "apple-notes"
+  },
+  {
+    "name": "add-text",
+    "title": "Add Text to Note",
+    "subtitle": "Apple Notes",
+    "description": "Add some text to an Apple note.",
+    "mode": "view",
+    "source_name": "add-text",
+    "source_description": "Add some text to an Apple note.",
+    "extension_name": "apple-notes"
+  },
+  {
+    "name": "view-selected-note",
+    "title": "View Selected Note",
+    "subtitle": "Apple Notes",
+    "description": "View the currently selected note in Raycast.",
+    "mode": "view",
+    "source_name": "view-selected-note",
+    "source_description": "View the currently selected note in Raycast.",
+    "extension_name": "apple-notes"
+  },
+  {
+    "name": "index",
+    "title": "Google Search",
+    "description": "Google search with autosuggestions",
+    "mode": "view",
+    "source_name": "index",
+    "source_description": "Google search with autosuggestions",
+    "extension_name": "google-search"
+  },
+  {
+    "name": "index",
+    "title": "Search Amazon",
+    "description": "Amazon search with autosuggestions",
+    "mode": "view",
+    "source_name": "index",
+    "source_description": "Amazon search with autosuggestions",
+    "extension_name": "amazon-search"
+  },
+  {
+    "name": "index",
+    "title": "Search ArXiv",
+    "description": "Search arXiv",
+    "mode": "view",
+    "source_name": "index",
+    "source_description": "Search arXiv",
+    "extension_name": "arxiv"
+  },
+  {
+    "name": "searchMessages",
+    "title": "Search Messages",
+    "subtitle": "microsoft-teams",
+    "description": "Search through message history in microsoft-teams",
+    "mode": "view",
+    "source_name": "searchMessages",
+    "source_description": "Search through message history in microsoft-teams",
+    "extension_name": "microsoft-teams"
+  },
+  {
+    "name": "sendMessage",
+    "title": "Send Message",
+    "subtitle": "microsoft-teams",
+    "description": "Send a new message in microsoft-teams",
+    "mode": "view",
+    "source_name": "sendMessage",
+    "source_description": "Send a new message in microsoft-teams",
+    "extension_name": "microsoft-teams"
+  },
+  {
+    "name": "setStatus",
+    "title": "Set Status",
+    "subtitle": "microsoft-teams",
+    "description": "Set online/away/busy status in microsoft-teams",
+    "mode": "view",
+    "source_name": "setStatus",
+    "source_description": "Set online/away/busy status in microsoft-teams",
+    "extension_name": "microsoft-teams"
+  },
+  {
+    "name": "findChat",
+    "title": "Find Chat",
+    "subtitle": "microsoft-teams",
+    "description": "Find and open a specific chat/channel in microsoft-teams",
+    "mode": "view",
+    "source_name": "findChat",
+    "source_description": "Find and open a specific chat/channel in microsoft-teams",
+    "extension_name": "microsoft-teams"
+  },
+  {
+    "name": "unreadMessages",
+    "title": "Unread Messages",
+    "subtitle": "microsoft-teams",
+    "description": "Show unread messages in microsoft-teams",
+    "mode": "view",
+    "source_name": "unreadMessages",
+    "source_description": "Show unread messages in microsoft-teams",
+    "extension_name": "microsoft-teams"
+  },
+  {
+    "name": "searchMessages",
+    "title": "Search Messages",
+    "subtitle": "discord",
+    "description": "Search through message history in discord",
+    "mode": "view",
+    "source_name": "searchMessages",
+    "source_description": "Search through message history in discord",
+    "extension_name": "discord"
+  },
+  {
+    "name": "sendMessage",
+    "title": "Send Message",
+    "subtitle": "discord",
+    "description": "Send a new message in discord",
+    "mode": "view",
+    "source_name": "sendMessage",
+    "source_description": "Send a new message in discord",
+    "extension_name": "discord"
+  },
+  {
+    "name": "setStatus",
+    "title": "Set Status",
+    "subtitle": "discord",
+    "description": "Set online/away/busy status in discord",
+    "mode": "view",
+    "source_name": "setStatus",
+    "source_description": "Set online/away/busy status in discord",
+    "extension_name": "discord"
+  },
+  {
+    "name": "findChat",
+    "title": "Find Chat",
+    "subtitle": "discord",
+    "description": "Find and open a specific chat/channel in discord",
+    "mode": "view",
+    "source_name": "findChat",
+    "source_description": "Find and open a specific chat/channel in discord",
+    "extension_name": "discord"
+  },
+  {
+    "name": "unreadMessages",
+    "title": "Unread Messages",
+    "subtitle": "discord",
+    "description": "Show unread messages in discord",
+    "mode": "view",
+    "source_name": "unreadMessages",
+    "source_description": "Show unread messages in discord",
+    "extension_name": "discord"
+  },
+  {
+    "name": "searchMessages",
+    "title": "Search Messages",
+    "subtitle": "imessage",
+    "description": "Search through message history in imessage",
+    "mode": "view",
+    "source_name": "searchMessages",
+    "source_description": "Search through message history in imessage",
+    "extension_name": "imessage"
+  },
+  {
+    "name": "sendMessage",
+    "title": "Send Message",
+    "subtitle": "imessage",
+    "description": "Send a new message in imessage",
+    "mode": "view",
+    "source_name": "sendMessage",
+    "source_description": "Send a new message in imessage",
+    "extension_name": "imessage"
+  },
+  {
+    "name": "findChat",
+    "title": "Find Chat",
+    "subtitle": "imessage",
+    "description": "Find and open a specific chat/channel in imessage",
+    "mode": "view",
+    "source_name": "findChat",
+    "source_description": "Find and open a specific chat/channel in imessage",
+    "extension_name": "imessage"
+  },
+  {
+    "name": "unreadMessages",
+    "title": "Unread Messages",
+    "subtitle": "imessage",
+    "description": "Show unread messages in imessage",
+    "mode": "view",
+    "source_name": "unreadMessages",
+    "source_description": "Show unread messages in imessage",
+    "extension_name": "imessage"
+  }
+]

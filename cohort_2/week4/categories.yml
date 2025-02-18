@@ -1,0 +1,36 @@
+question_type:
+  Returns & Refunds:
+    - title: Return/Refund Process
+      description: User is asking how to initiate a return or refund for their order
+    - title: Return/Refund Status
+      description: User is inquiring about the status of their return or refund
+    - title: Eligibility
+      description: User wants to know if their order is eligible for a return or refund
+    - title: Policy Details
+      description: User is asking about the company's return and refund policies
+    - title: Refund Method
+      description: User wants to know how they will receive their refund (e.g., original payment method, store credit)
+    - title: Store Response
+      description: User is seeking help because the store didn't respond to their return or refund requests
+
+  Account & Settings:
+    - title: Login Issues
+      description: User is having trouble logging into their account
+    - title: Account Management
+      description: User is asking how to update or manage their account details
+
+  Indices:
+    - title: Shipping Information
+      description: User is inquiring about shipping times, costs, or options
+    - title: Payment Methods
+      description: User has questions about accepted payment types or processing issues
+    - title: Product Availability
+      description: User is asking about stock levels or when an item will be restocked
+    - title: Warranty Information
+      description: User is asking about warranties on products
+    - title: Technical Support
+      description: User needs assistance with technical issues or troubleshooting
+
+  Others:
+    - title: Others
+      description: If the query doesn't fit into any of the other categories

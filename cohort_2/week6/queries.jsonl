@@ -1,0 +1,52 @@
+{"query": "create a grocery list note with Milk, eggs, bread, and cheese, and pin it so that i can find it later.","labels": ["apple-notes.new", "apple-notes.add-text","apple-notes.menu-bar"]}
+{"query": "Let's create a new release post about our latest deployment, also make sure to link the specific issues that were fixed in the latest sprint and send a message the #engineering channel to let them know about it","labels": ["confluence-search.new-blog", "jira.active-sprints", "microsoft-teams.findChat","microsoft-teams.sendMessage"]}
+{"query":"find weather taiwan december and generate a shopping list for it","labels": ["google-search.index","apple-notes.new","apple-notes.add-text"]}
+{"query": "Set my status to 'Working from home today, catching up on some emails' with a 'Do not disturb' prezence, and inform the team that im available via messege for questions related to the migration", "labels": ["microsoft-teams.setStatus"]}
+{"query": "any security alerts raised since we upgraded our nextjs dependencies over to 14.2.0? ", "labels": ["github.unread-notifications"]}
+{"query": "Tell mum i'll be back for dinner around 7pm", "labels": ["imessage.findChat","imessage.sendMessage"]}
+{"query": "just booked the latest accomodations for tokyo, let's start tracking the spending for that day with the 1500 price for the dates nov 12-20", "labels": ["notion.create-database-page"]}
+{"query": "search messages Gregory modal, need to find the code snippet for handling websocket connections", "labels": ["microsoft-teams.searchMessages"]}
+{"query": "add a reminder to my todos to buy some groceries for dinner tonight", "labels": ["apple-notes.add-text"]}
+{"query": "pull up munich plans, send mike the airbnb link to the accoms on the 22nd", "labels": ["notion.search-page","imessage.findChat","imessage.sendMessage"]}
+{"query": "check with tim when we're supposed to do the onboarding for the new hires?", "labels": ["microsoft-teams.findChat","microsoft-teams.sendMessage"]}
+{"query": "check with james that we've shipped the new feature?", "labels": ["microsoft-teams.findChat","microsoft-teams.sendMessage"]}
+{"query": "let's go crack open that new raid, set status to dnd and ping #bois", "labels": ["discord.setStatus","discord.searchMessages","discord.sendMessage"]}
+{"query": "what did the team achieve in the last few days", "labels": ["jira.recently-updated-issues"]}
+{"query": "Create a PR in the apollo frontend repo from branch jira-3214 titled 'Fix: Resolve slow loading times on homepage' and fill in the related info from the jira ticket.", "labels": ["github.create-pull-request", "jira.open-issues"]}
+{"query": "Add a reminder to book a dentist appointment next week", "labels": ["apple-notes.add-text"]}
+{"query": "add a reminder to pick up dry cleaning on Friday", "labels": ["apple-notes.add-text"]}
+{"query": "remind me to check on passport renewal next month", "labels": ["apple-notes.add-text"]}
+{"query": "remind me to buy more printer paper", "labels": ["apple-notes.add-text"]}
+{"query": "pull up my recently accessed pages related to our backend api", "labels": ["confluence-search.search"]}
+{"query": "open release notes for the latest release", "labels": ["confluence-search.go"]}
+{"query": "What did we discuss last week in the meeting with Nike?", "labels": ["confluence-search.search"]}
+{"query": "any more prs or security alerts to worry about?", "labels": ["github.notifications"]}
+{"query": "Just got approval for the Nike summer campaign we did, can u update the project status to approved on our project page?", "labels": ["confluence-search.add-text"]}
+{"query": "can you help me find the diagrams I did to show how docker containerisation works in my personal notes?","labels": ["obsidian.searchMedia"]}
+{"query": "can you help me find that sketch I made that explained the docker containerisation process, i need it to explain to the team","labels": ["obsidian.searchMedia"]}
+{"query": "search for my aws architecture drawings","labels": ["obsidian.searchMedia"]}
+{"query": "Message David to ask if he's still up for basketball this weekend","labels": ["imessage.findChat","imessage.sendMessage"]}
+{"query": "Send Kevin a message asking if he still has my charger","labels": ["imessage.findChat","imessage.sendMessage"]}
+{"query": "Tell Alex I'm running 15 minutes late for brunch","labels": ["imessage.findChat","imessage.sendMessage"]}
+{"query": "Set my status to OOO and message #team-general that I'll be taking PTO next week to handle some family matters","labels": ["microsoft-teams.setStatus","microsoft-teams.findChat","microsoft-teams.sendMessage"]}
+{"query": "Set status to focusing, check unread messages, and let the team know I'm working on JIRA-1234","labels": ["microsoft-teams.setStatus","microsoft-teams.unreadMessages","microsoft-teams.sendMessage"]}
+{"query": "Check active sprint tasks and update the team channel about today's blockers","labels": ["jira.active-sprints","microsoft-teams.findChat","microsoft-teams.sendMessage"]}
+{"query": "Check workflow runs status and update #devops about the failed builds","labels": ["github.workflow-runs","microsoft-teams.findChat","microsoft-teams.sendMessage"]}
+{"query": "Pull up the latest release notes and notify #engineering about the deployment","labels": ["confluence-search.search","microsoft-teams.findChat","microsoft-teams.sendMessage"]}
+{"query": "search notes with #debugging, swear i had a fix for memory leaks in zig somewhere","labels": ["obsidian.searchNoteCommand"]}
+{"query": "Send a message to #project-alpha: Update on the recent production incident? Check Jira ticket 1024 for details, Github PRs are linked there.", "labels": ["microsoft-teams.findChat","microsoft-teams.sendMessage","jira.search-issues"]}
+{"query": "Create a Jira bug for high CPU usage on login screen, affecting iOS and Android and assign it to kenny. ping him the link once done.", "labels": ["jira.create-issue", "microsoft-teams.findChat","microsoft-teams.sendMessage"]}
+{"query": "Any updates on the memory leak bug i reported? ", "labels": ["jira.reported-issues"]}
+{"query": "What's happening with the accessibility tickets I submitted? ", "labels": ["jira.reported-issues"]}
+{"query": "write up the feature launch announcement, include the beta testing feedback that we put in the issue and notify the product team", "labels": ["confluence-search.new-blog", "jira.search-issues", "microsoft-teams.findChat", "microsoft-teams.sendMessage"]}
+{"query": "create onboarding guide for new devs, get the tickets which we tagged as good-first-time and share with #new-hires", "labels": ["confluence-search.new-page", "jira.search-issues", "microsoft-teams.findChat", "microsoft-teams.sendMessage"]}
+{"query": "check if anyone's approved my kubernetes config changes", "labels": ["github.my-pull-requests"]}
+{"query": "any failing builds in the main branch?", "labels": ["github.workflow-runs"]}
+{"query": "tell #team-alpha I'll be late for tonight's dungeon run", "labels": ["discord.findChat", "discord.sendMessage"]}
+{"query": "drop a message in #guild chat that I'm taking a break and set status to idle for now", "labels": ["discord.setStatus", "discord.findChat", "discord.sendMessage"]}
+{"query": "Did anyone respond to my message in #gaming about playing it takes two later", "labels": ["discord.searchMessages"]}
+{"query": "did anyone review my frontend PR from yesterday?", "labels": ["github.my-pull-requests"]}
+{"query": "check if there are any dependency vulnerabilities raised recently", "labels": ["github.unread-notifications"]}
+{"query": "did anyone comment on the pr for the performance fix?", "labels": ["github.notifications"]}
+{"query": "pull up those security alerts and ping the security team", "labels": ["github.unread-notifications", "microsoft-teams.findChat", "microsoft-teams.sendMessage"]}
+{"query": "Add a reminder to onboarding document that users should apply for an access card on their first day and to contact security for the key to the building", "labels": ["confluence-search.add-text"]}

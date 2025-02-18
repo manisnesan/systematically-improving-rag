@@ -1,0 +1,102 @@
+
+length:
+  - short message that's got 1-2 spelling mistakes
+  - medium message that's straight to the point
+  - message with some useless context
+
+persona:
+  - user that's not tech savvy  
+  - new user to klarna
+  - frequent user of klarna 
+  - someone that's not tech savvy and wants to use klarna for the first time
+
+customer_intents:
+  "Account & settings":
+    "Login":
+      - User is unable to log in to their account.
+      - User forgot their password and needs to reset it.
+      - User's account is locked, and they want access restored.
+      - User is facing errors during the login process.
+    "Manage account":
+      - User wants to update their account details.
+      - User cannot find the specific property they want to update (e.g., email, password).
+      - User wants to close their account.
+      - User is confused about where to manage their account settings.
+
+  "Declined purchase":
+    "Declined Purchase":
+      - User wants to understand why their purchase was declined.
+      - User is frustrated with a declined transaction and wants to resolve it.
+      - User wants to retry a declined purchase but needs guidance.
+      - User wants to know if a declined purchase affects their Klarna account status.
+
+  "Delivery & returns":
+    "Problem resolution":
+      - User has not received their order and wants to know what to do next.
+      - User received a damaged or incorrect item and wants assistance.
+      - User is dissatisfied with the store's response and wants Klarna to intervene.
+    "Returns":
+      - User wants to initiate a return for an item purchased with Klarna.
+      - User needs clarification on how return policies apply to Klarna purchases.
+      - User wants to know what happens to their payment schedule after a return.
+    "Cancellations":
+      - User wants to cancel their order and needs to understand the process.
+      - User is unsure if Klarna needs to be notified about the cancellation.
+      - User's order was canceled by the store, and they want to know next steps.
+    "Deliveries":
+      - User is concerned about a delayed delivery.
+      - User wants help tracking their order.
+      - User did not receive their order and wants to report it.
+      - User wants to know Klarna's policies regarding lost or delayed deliveries.
+
+  "Fraud & security":
+    "Data protection":
+      - User is concerned about how their personal data is handled.
+      - User wants to request deletion of their personal information.
+      - User wants to know if Klarna shares their data with third parties.
+    "Prevent fraud":
+      - User is concerned about securing their Klarna account from potential fraud.
+    "Report fraud":
+      - User clicked on a link that was not legitimate and is panicking right now
+      - User recieved a suspicious call claiming to be from Klarna and accidentally revealed their Klarna card details
+      - User wants to report a fraudulent purchase or unauthorized transaction.
+
+  "Payments":
+    "Payment issues":
+      - User is confused about why a payment isn't showing in their account.
+      - User was charged incorrectly or twice for a single purchase.
+      - User experienced a failed payment and wants to resolve the issue.
+    "Make & manage payments":
+      - User wants to manage their Klarna payment schedule.
+      - User wants to pay off their balance early and needs guidance.
+      - User wants to know what happens if they miss a payment deadline.
+      - User wants to know if they can change their payment method
+
+  "Products & services":
+    "Klarna Card":
+      - User wants to apply for a Klarna Card.
+      - User lost or had their Klarna Card stolen and needs assistance.
+      - User wants to understand the benefits and limitations of the Klarna Card.
+    "Payment options":
+      - User is unsure about the different payment options Klarna offers.
+      - User wants to switch between payment plans (e.g., from installments to full payment).
+      - User wants to know if interest or fees apply to their payment plan.
+    "How to use Klarna":
+      - User wants to understand how Klarna works for both online and in-store purchases.
+      - User wants to find stores that accept Klarna.
+      - User wants to know if Klarna can be used for recurring payments or subscriptions.
+    "Klarna balance":
+      - User wants to check their Klarna account balance.
+      - User is confused about discrepancies in their balance.
+      - User wants to know how refunds impact their Klarna balance.
+    "One-time card":
+      - User wants to create a Klarna one-time card.
+      - User needs to cancel or adjust a one-time card.
+      - User wants to know what happens to unused funds on a one-time card.
+
+  "Refunds":
+    "Manage refunds":
+      - User is asking about refund status for their Nike purchase
+      - User is asking if their Nike purchase is eligible for a refund
+      - User wants refund instead of store credit
+      - user wants to report nike for not responding to requests
