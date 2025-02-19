@@ -1,0 +1,85 @@
+task: query_type_classification
+description: >
+  Classify user queries into predefined categories based on the type of task requested. 
+  This classification system aims to categorize incoming user queries into specific task types, 
+  such as troubleshoot error symptom, product usage, CVE, Errata. 
+  
+  The purpose is to streamline query processing, improve response accuracy, and potentially 
+  route queries to appropriate handling systems or personnel. This classification helps in 
+  prioritizing tasks, applying relevant security measures, and ensuring that time-sensitive 
+  queries are handled promptly. 
+  
+  The system uses a set of predefined labels, each with a clear description and examples, 
+  to accurately categorize a wide range of user inputs. This approach enables efficient 
+  query handling and enhances the overall user experience by providing more targeted and 
+  timely responses to various types of requests.
+
+# For each label we show the top `n_examples` examples automatically
+n_examples: 2
+# Number of similar examples to fetch if we use RAGClassifier vs YAMLClassifer
+n_similar_examples: 2
+
+labels:
+  - name: cve_id_queries
+    description: Queries related to Common Vulnerabilities and Exposures
+    examples:
+      positive: 
+        - "I am looking for information on CVE-2021-12345"
+        - "What are the details of CVE-2021-54321?"
+        - "Can you provide me with the CVE details for RHEL 8.8?"
+        - "CVE-2021-12345"
+        - "CVE-2021-54321"
+      negative: 
+        - "What's the weather like today?"
+        - "Can you draft an email for me?"
+    
+  - name: errata_id_queries
+    description: Queries related to Errata
+    examples:
+      positive: 
+        - "I am looking for the latest Errata for RHEL 8.8"
+        - "Where can I find the Errata for RHEL 7.9?"
+        - RHBA-2024:2716
+        - RHEA-2024:2529
+        - RHEA-2024:1611
+      negative: 
+        - "What's the weather like today?"
+        - "Can you draft an email for me?"
+
+  - name: product_usage_questions
+    description: Queries related to product usage and features potentially answered by documentation
+    examples:
+      positive: 
+        - "How do I configure the firewall on my server?"
+        - How to install RHEL 8.10 for ppcle from media
+        - how to update openssl
+        - how to add users in sudo
+      negative: 
+        - "Can you recommend a good restaurant in the area?"
+        - "What's the best way to learn a new language?"
+  
+  - name: troubleshoot_error_symptoms
+    description: Queries related to resolving errors faced
+    examples:
+      positive: 
+        - "Hello Team, We are trying to upgrade EC2 VM from RHEL 7.9 to 8.8 and we are facing multiple issue in the process. Following errors occurred and the upgrade cannot continue: 1. Actor: missing_gpg_keys_inhibitor Message: Could not check for valid GPG keys"
+        - "#leapp preupgrade --target 9.4 Got the below error FileNotFoundError: [Errno 2] No such file or directory: '/boot/grub2/grub.cfg'"
+      negative: 
+        - "I can not view availables repositories to make an upgrade"
+        - "We are looking for a suggestion for in place upgrade from RHEL7.9 to 9.4 for /boot/efi/EFI/redhat/grub.cfg"
+
+  - name: low_intent_queries
+    description: Queries with low intent or unclear requests requiring further clarification
+    examples:
+      positive: 
+        - python3-urllib3-1.26.19-1.el8.noarch.rpm
+        - python3-urllib3-1.26.19-1.el8\.noarch.rpm
+        - cgroups v2
+        - openjdk 8
+        - enable els
+      negative: 
+        - "Can you give me access to the financial reports?"
+        - "I need permission to edit the shared document."
+
+  # - name: other_queries
+  #   description: Queries that do not fit into any of the predefined categories

@@ -1,0 +1,34 @@
+You are tasked with evaluating the relevance of text chunks to a given question. Your goal is to determine which chunks contain information that could be useful in answering the question, while preserving the original chunk IDs for later processing.
+
+Here is the question you will be using to evaluate the relevance of the chunks:
+
+<question>
+{{QUESTION}}
+</question>
+
+You will be provided with a list of text chunks, each with a unique ID. The chunks will be in the following format:
+
+<chunks>
+{{CHUNKS}}
+</chunks>
+
+For each chunk, you should:
+1. Carefully read and understand its content.
+2. Evaluate whether the information in the chunk is relevant to answering the question.
+3. Provide a brief explanation of why the chunk is or is not relevant.
+4. Assign a relevance score from 0 to 1, where 0 is completely irrelevant and 1 is highly relevant.
+
+Present your evaluation for each chunk in the following format:
+
+<evaluation>
+<chunk_id>[Insert the original chunk ID here]</chunk_id>
+<reasoning>[Your explanation of relevance or irrelevance]</reasoning>
+<relevance_score>[Your score from 0 to 1]</relevance_score>
+</evaluation>
+
+Important notes:
+- Maintain objectivity in your evaluations.
+- Focus on the content's relevance to the question, not its quality or completeness.
+- Be consistent in your scoring across all chunks.
+- Do not modify or summarize the original chunk text.
+- If a chunk contains partial relevance, explain which parts are relevant and which are not.

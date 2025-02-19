@@ -1,0 +1,79 @@
+version: 3
+created_by: adahms
+domain: ROSA product knowledge
+seed_examples:
+  - context: |
+      ROSA is a fully-managed, turnkey application platform that allows you to focus on delivering value to your customers by building and deploying applications. Red Hat site reliability engineering (SRE) experts manage the underlying platform so you do not have to worry about the complexity of infrastructure management. ROSA provides seamless integration with Amazon CloudWatch, AWS Identity and Access Management (IAM), Amazon Virtual Private Cloud (VPC), and a wide range of additional AWS services to further accelerate the building and delivering of differentiating experiences to your customers. You subscribe to the service directly from your AWS account. After you create clusters, you can operate your clusters with the OpenShift web console, the ROSA CLI, or through Red Hat OpenShift Cluster Manager. You receive OpenShift updates with new feature releases and a shared, common source for alignment with OpenShift Container Platform. ROSA supports the same versions of OpenShift as Red Hat OpenShift Dedicated and OpenShift Container Platform to achieve version consistency.
+    questions_and_answers:
+      - question: |
+          What is ROSA?
+        answer: |
+          ROSA (Red Hat OpenShift Service on AWS) is a fully-managed platform that lets you build and deploy applications without worrying about infrastructure management. Managed by Red Hat SRE experts, it integrates seamlessly with AWS services like CloudWatch, IAM, and VPC to enhance application delivery.
+      - question: |
+          How can I subscribe to ROSA?
+        answer: |
+          You can subscribe to ROSA directly through your AWS account. After subscribing, you can then manage your clusters using the OpenShift web console, the ROSA CLI, or Red Hat OpenShift Cluster Manager.
+      - question: |
+          Which versions of OpenShift does ROSA support?
+        answer: |
+          ROSA (Red Hat OpenShift Service on AWS) supports the same versions of OpenShift as Red Hat OpenShift Dedicated and OpenShift Container Platform. This alignment includes all feature updates and new releases available for these platforms
+  - context: |
+       A user in Red Hat OpenShift Service on AWS is an entity that can make requests to the Red Hat OpenShift Service on AWS API. An Red Hat OpenShift Service on AWS User object represents an actor which can be granted permissions in the system by adding roles to them or to their groups. Typically, this represents the account of a developer or administrator that is interacting with Red Hat OpenShift Service on AWS. Several types of users can exist: Regular users This is the way most interactive Red Hat OpenShift Service on AWS users are represented. Regular users are created automatically in the system upon first login or can be created via the API. Regular users are represented with the User object. Examples: joe alice. System users. Many of these are created automatically when the infrastructure is defined, mainly for the purpose of enabling the infrastructure to interact with the API securely. They include a cluster administrator (with access to everything), a per-node user, users for use by routers and registries, and various others. Finally, there is an anonymous system user that is used by default for unauthenticated requests. Examples: system:admin system:openshift-registry system:node:node1.example.com Service accounts. These are special system users associated with projects; some are created automatically when the project is first created, while project administrators can create more for the purpose of defining access to the contents of each project. Service accounts are represented with the ServiceAccount object. Examples: system:serviceaccount:default:deployer system:serviceaccount:foo:builder
+    questions_and_answers:
+      - question: |
+          What types of users are there in ROSA?
+        answer: |
+          In Red Hat OpenShift Service on AWS (ROSA), there are three main types of users: regular users, system users, and service accounts.
+      - question: |
+          What is a system user?
+        answer: |
+          A system user is a user created automatically for infrastructure interactions with the AWS API. For example, roles such as cluster administrators that are essential for system operations such as managing nodes, routers, and registries.
+      - question: |
+          What type of user should I create for an admin?
+        answer: |
+          To grant admin access in Red Hat OpenShift Service on AWS, create a "regular user" and assign them the necessary administrative roles. Regular users are typically the accounts of developers or administrators and can be given specific permissions within the system to perform administrative tasks.
+  - context: |
+       You can gather debugging information about your cluster by using the oc adm must-gather CLI command. Prerequisites: You have access to the cluster as a user with the cluster-admin role. The OpenShift CLI (oc) is installed. Procedure: Navigate to the directory where you want to store the must-gather data. Run the oc adm must-gather command: $ oc adm must-gather. Note: Because this command picks a random control plane node by default, the pod might be scheduled to a control plane node that is in the NotReady and SchedulingDisabled state. If this command fails, for example, if you cannot schedule a pod on your cluster, then use the oc adm inspect command to gather information for particular resources. Note: Contact Red Hat Support for the recommended resources to gather. Create a compressed file from the must-gather directory that was just created in your working directory. For example, on a computer that uses a Linux operating system, run the following command: $ tar cvaf must-gather.tar.gz must-gather.local.5421342344627712289/ 1. Make sure to replace must-gather-local.5421342344627712289/ with the actual directory name. Attach the compressed file to your support case on the the Customer Support page of the Red Hat Customer Portal.
+    questions_and_answers:
+      - question: |
+          How do I run a must gather?
+        answer: |
+          To run the oc adm must-gather command, ensure you have cluster-admin access and the OpenShift CLI installed. Run the command in the directory where you will store the output.
+      - question: |
+          What do I do with a must gather?
+        answer: |
+          After running the oc adm must-gather command to collect debugging information from your Red Hat OpenShift cluster, compress the output directory into a .tar.gz file. Then, attach the file to your support case on the Red Hat Customer Portal.
+      - question: |
+          What are the prerequisites for running a must gather?
+        answer: |
+          You must have access to the cluster as a user with the cluster-admin role, and the OpenShift CLI (oc) must be installed on your machine.
+  - context: |
+       Red Hat OpenShift Service on AWS storage is broadly classified into two categories, namely ephemeral storage and persistent storage. Ephemeral storage: Pods and containers are ephemeral or transient in nature and designed for stateless applications. Ephemeral storage allows administrators and developers to better manage the local storage for some of their operations. For more information about ephemeral storage overview, types, and management, see Understanding ephemeral storage. Persistent storage: Stateful applications deployed in containers require persistent storage. Red Hat OpenShift Service on AWS uses a pre-provisioned storage framework called persistent volumes (PV) to allow cluster administrators to provision persistent storage. The data inside these volumes can exist beyond the lifecycle of an individual pod. Developers can use persistent volume claims (PVCs) to request storage requirements. For more information about persistent storage overview, configuration, and lifecycle, see Understanding persistent storage.
+    questions_and_answers:
+      - question: |
+          What types of storage are available in ROSA?
+        answer: |
+          In Red Hat OpenShift Service on AWS (ROSA), there are two main types of storage available: ephemeral storage and persistent storage.
+      - question: |
+          Which storage type should I choose?
+        answer: |
+          Choose ephemeral storage for stateless applications that do not require data persistence after the pod is terminated. Choose persistent storage when deploying stateful applications that need data to persist beyond the lifecycle of individual pods.
+      - question: |
+          What is persistent storage?
+        answer: |
+          A storage solution where data persists beyond the lifecycle of individual pods. Persistent storage uses persistent volumes (PVs) to provide stable storage for stateful applications, and developers can manage space requirements with persistent volume claims (PVCs).
+  - context: |
+       You must ensure that the AWS limits are sufficient to support Red Hat OpenShift Service on AWS provisioned within your AWS account. Running the rosa verify quota command in the CLI validates that you have the required quota to run a cluster. Quota verification checks your AWS quota, but it does not compare your consumption to your AWS quota. See the "Limits and scalability" link in Additional resources for more information. If SCP policies are applied and enforced, these policies must not be more restrictive than the roles and policies required by the cluster. Your AWS account should not be transferable to Red Hat. You should not impose additional AWS usage restrictions beyond the defined roles and policies on Red Hat activities. Imposing restrictions will severely hinder Red Hat’s ability to respond to incidents. You may deploy native AWS services within the same AWS account. Your account must have a service-linked role set up as it is required for Elastic Load Balancing (ELB) to be configured. See the "Creating the Elastic Load Balancing (ELB) service-linked role" link in the Additional resources for information about creating a service-linked role for your ELB if you have not created a load balancer in your AWS account previously. You are encouraged, but not required, to deploy resources in a Virtual Private Cloud (VPC) separate from the VPC hosting Red Hat OpenShift Service on AWS and other Red Hat supported services.
+    questions_and_answers:
+      - question: |
+          What are the AWS account requirements for ROSA?
+        answer: |
+          For ROSA on AWS, ensure your AWS account has adequate service quotas verified via the rosa verify quota CLI command. Your account must not be transferable to Red Hat, should not impose extra usage restrictions, and must have a service-linked role for ELB. SCP policies must align with required roles and not be overly restrictive. Deploying in a separate VPC is recommended but not mandatory.
+      - question: |
+          Do I need SCP policies for ROSA on AWS?
+        answer: |
+          SCP policies are optional, but if implemented, they must not be more restrictive than the roles and policies required by the cluster.
+      - question: |
+          Does ROSA require a separate VPC?
+        answer: |
+          ROSA does not require a separate VPC, but it is encouraged. You can deploy ROSA within the same AWS account and VPC as your other AWS services, as long as the necessary AWS limits and service-linked roles, such as those for Elastic Load Balancing, are properly set up.
