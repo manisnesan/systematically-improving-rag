@@ -12,3 +12,4 @@ sentence-transformers
 jupyter
 ipykernel
 wandb
+python-dotenv

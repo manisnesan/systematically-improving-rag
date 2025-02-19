@@ -1,12 +1,19 @@
+Adopt the Top Down Learning approach https://forums.fast.ai/t/learning-strategy-for-top-down-approach/66173 
+Status: Pass 1
+Read the slides. Watch the lecture once. Run the notebook. Create Zoterno notes and Synthesis.md. Complete the HW.
+
 Review the zotero notes for the HW present in the slides.
 
 ## DOING
 
+- [NB_Week1] - Refactoring metrics into a module and gettings benchmark evals using fts, vector, hybrid, cohere reranker.
 - [NB_Week4] - Benchmark tool retrieval
 - [Week5] - Reviewed the evaluate_sbert.py script and synthesized into a excalidraw diagram.
 
 ## TODO
 
+- [Slides_Week1] - Generate Synthetic data from Content (1. Labs, 2. Solutions 3. Documentation). Establish baseline for Recall, Precision, Lexical Search, Semantic Search, Reranker.
+- [Lecture_Week1] - Review the Lecture from Week 1 and also the Guest Lecture.
 - [HW_Week3] - Extracted Structured Output from Labs & Create Labs Index.
 - [HW] Extract Structured Output from Cases. 
   - Question: QuestionType{NLQ, Error, Multilingual}, Entities{Product, Component, SBR, Tag}, Symptoms present, Served_by_Chunk_Document_Summary, is_1Turn, IssueType, AttachmentRequired
